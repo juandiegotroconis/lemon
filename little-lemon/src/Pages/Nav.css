@@ -1,0 +1,51 @@
+@media only screen and (max-width: 480px) {
+  .navbar .categories {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 480px) {
+  .navbar .categories {
+    margin-left: auto;
+    display: flex;
+    list-style-type: none;
+  }
+
+  .navbar .menu-icon {
+    display: none;
+  }
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3vh 5vh;
+}
+
+.navbar .navbar-img {
+  height: 6vh;
+}
+
+.navbar .menu-icon {
+  margin-left: auto;
+  height: 4.5vh;
+}
+
+.navbar .menu-icon:hover {
+  cursor: pointer;
+}
+
+.navbar .navbar-img:hover {
+  cursor: pointer;
+}
+
+.navbar .categories a {
+  text-decoration: none;
+}
+
+.navbar .categories li {
+  margin: auto 2vh;
+  color: black;
+  text-transform: uppercase;
+}

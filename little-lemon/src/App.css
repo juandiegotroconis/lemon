@@ -1,3 +1,7 @@
+* {
+  margin: 0;
+}
+
 .App {
   text-align: center;
 }
@@ -35,4 +39,56 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.App .section-title {
+  font-size: 20pt;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: inherit;
+}
+
+.App .cta-text {
+  font-size: 18pt;
+  font-weight: 600;
+  color: inherit;
+}
+
+.App .section-category {
+  font-size: 16pt;
+  font-weight: 700;
+  color: inherit;
+}
+
+.App .card-title {
+  font-size: 18pt;
+  font-weight: 600;
+  color: inherit;
+}
+
+.App .paragraph {
+  font-size: 16pt;
+  color: inherit;
+}
+
+.App .highlight-text {
+  font-size: 16pt;
+  font-weight: 400;
+  color: inherit;
+}
+
+.App .button {
+  height: fit-content;
+  padding: 1vh 3vh;
+  background-color: #f4ce14;
+  color: #333333;
+  font-size: 18pt;
+  font-weight: 600;
+  border: none;
+  border-radius: 1vh;
+}
+
+.App .button:hover {
+  cursor: pointer;
+  background-color: #f4cf14d3;
 }

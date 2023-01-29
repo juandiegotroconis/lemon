@@ -1,0 +1,40 @@
+.header {
+  padding: 2vh 5vh;
+  background-color: #495e57;
+  display: grid;
+  column-gap: 30vh;
+  row-gap: 5vh;
+  grid-template-columns: repeat(auto-fit, 45vh);
+  justify-content: center;
+  align-items: center;
+}
+
+.header .text {
+  text-align: left;
+  width: 45vh;
+  justify-content: center;
+}
+
+.header .text .cta-text {
+  color: #f4ce14;
+}
+
+.header .text .paragraph {
+  color: #edefee;
+}
+
+.header .text p {
+  margin-bottom: 2vh;
+}
+
+.header .text .button {
+  margin-top: 3vh;
+}
+
+.header img {
+  justify-self: center;
+  width: 35vh;
+  height: 35vh;
+  border-radius: 2vh;
+  object-fit: cover;
+}

@@ -1,0 +1,64 @@
+.Card {
+  background-color: #edefee;
+  height: 105%;
+  width: 48vh;
+  border-top-left-radius: 2vh;
+  border-top-right-radius: 2vh;
+  overflow: hidden;
+}
+
+.Card .card-img {
+  height: 35vh;
+  width: 100%;
+  object-fit: cover;
+}
+
+.Card .text {
+  padding: 1vh 3vh;
+}
+
+.Card .text .card-header {
+  display: flex;
+}
+
+.Card .text .card-header .title {
+  color: #333333;
+  font-weight: 600;
+  font-size: 18pt;
+}
+
+.Card .text .card-header .price {
+  color: #ee9972;
+  font-weight: 500;
+  font-size: 16pt;
+  margin-left: auto;
+}
+
+.Card .text .description {
+  text-align: left;
+  color: #495e57;
+  font-size: 16pt;
+  overflow-y: hidden;
+  text-overflow: ellipsis;
+  height: 15vh;
+}
+
+.Card .cta {
+  margin-top: 2vh;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  font-weight: 600;
+  font-size: 18pt;
+  color: #333333;
+  gap: 1vh;
+}
+
+.Card .cta:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.Card .icon {
+  width: 2.5vh;
+}

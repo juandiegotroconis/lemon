@@ -1,8 +1,8 @@
 import "./App.css";
-import Footer from "./Components/Footer";
-import Header from "./Components/Header";
-import Main from "./Components/Main";
-import Nav from "./Components/Nav";
+import Footer from "./Pages/Footer";
+import Header from "./Pages/Header";
+import Main from "./Pages/Main";
+import Nav from "./Pages/Nav";
 
 function App() {
   const sections = [
@@ -15,9 +15,8 @@ function App() {
   ];
   return (
     <div className='App'>
-      Homepage
-      <Header />
       <Nav sections={sections} />
+      <Header />
       <Main />
       <Footer sections={sections} />
     </div>

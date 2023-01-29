@@ -1,0 +1,33 @@
+.footer {
+  background-color: #495e57;
+  margin-top: 10vh;
+  padding: 2vh 5%;
+  display: grid;
+  row-gap: 2vh;
+  grid-template-columns: repeat(auto-fit, 30vh);
+  justify-content: center;
+  align-items: center;
+}
+
+.footer .footer-img {
+  margin: auto;
+  height: 6vh;
+}
+
+.footer .categories {
+  margin-bottom: auto;
+  list-style-type: none;
+  width: 30vh;
+}
+
+.footer .categories a {
+  text-decoration: none;
+}
+
+.footer .categories li {
+  margin: 1vh auto;
+  text-transform: capitalize;
+  color: #edefee;
+  font-weight: 400;
+  text-align: left;
+}
