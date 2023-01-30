@@ -36,6 +36,7 @@ function Main() {
         {specials.map((dish) => {
           return (
             <Card
+              key={dish.title}
               img={dish.img}
               title={dish.title}
               price={dish.price}
