@@ -1,0 +1,41 @@
+.TestimonialCard {
+  margin: 0;
+  width: 25vh;
+  height: 25vh;
+  border-radius: 2vh;
+  background-color: #efedee;
+  color: #333333;
+  position: relative;
+}
+
+.TestimonialCard .section-comment {
+  text-align: left;
+  width: 80%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.TestimonialCard p:first-child {
+  position: absolute;
+  top: 2vh;
+  left: 2vh;
+}
+
+.TestimonialCard .stars {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.TestimonialCard .stars img {
+  width: 3vh;
+  margin: 0.5vh;
+}
+
+.TestimonialCard p:last-child {
+  position: absolute;
+  bottom: 2vh;
+  left: 2vh;
+}

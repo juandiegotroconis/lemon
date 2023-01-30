@@ -60,6 +60,12 @@
   color: inherit;
 }
 
+.App .section-comment {
+  font-size: 12pt;
+  font-weight: 500;
+  color: inherit;
+}
+
 .App .card-title {
   font-size: 18pt;
   font-weight: 600;

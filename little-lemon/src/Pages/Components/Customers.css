@@ -1,0 +1,19 @@
+.Customers {
+  width: 100%;
+  padding: 5vh 10%;
+  box-sizing: border-box;
+  background-color: #495e57;
+}
+
+.Customers .cta-text {
+  color: #f4ce14;
+  margin-bottom: 5vh;
+}
+
+.Customers .content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 25vh);
+  gap: 5vh;
+  align-items: center;
+  justify-content: center;
+}

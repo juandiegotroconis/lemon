@@ -1,5 +1,7 @@
 import React from "react";
-import Card from "./Components/Card";
+import About from "./Components/About";
+import Customers from "./Components/Customers";
+import Specials from "./Components/Specials";
 import "./Main.css";
 
 function Main() {
@@ -26,25 +28,29 @@ function Main() {
         "This comes straight from grandma’s recipe book, every last ingredient has been sourced and is as authentic as can be imagined.",
     },
   ];
+  const customers = [
+    {
+      name: "John Doe",
+      rating: 5,
+      comment: "Excellent",
+    },
+    {
+      name: "Mike Johnson",
+      rating: 4,
+      comment: "Great experience",
+    },
+    {
+      name: "Rachel Green",
+      rating: 5,
+      comment: "Outstanding",
+    },
+  ];
+
   return (
     <main className='main'>
-      <div className='title'>
-        <p className='cta-text'>This weeks specials!</p>
-        <button className='button'>Online menu</button>
-      </div>
-      <div className='content'>
-        {specials.map((dish) => {
-          return (
-            <Card
-              key={dish.title}
-              img={dish.img}
-              title={dish.title}
-              price={dish.price}
-              description={dish.description}
-            />
-          );
-        })}
-      </div>
+      <Specials specials={specials} />
+      <Customers reviews={customers} />
+      <About />
     </main>
   );
 }

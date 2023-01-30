@@ -1,10 +1,11 @@
 .Card {
   background-color: #edefee;
-  height: 105%;
+  height: 100%;
   width: 48vh;
   border-top-left-radius: 2vh;
   border-top-right-radius: 2vh;
   overflow: hidden;
+  padding-bottom: 1.5vh;
 }
 
 .Card .card-img {

@@ -1,0 +1,28 @@
+.Specials {
+  padding: 5vh 0vh;
+}
+
+.Specials .title {
+  display: block;
+  padding: 0 10%;
+  margin-bottom: 5vh;
+  display: flex;
+  align-items: center;
+  height: fit-content;
+}
+
+.Specials .title .cta-text {
+  text-align: left;
+}
+
+.Specials .title .button {
+  margin-left: auto;
+}
+
+.Specials .content {
+  display: grid;
+  column-gap: 5vh;
+  row-gap: 8vh;
+  grid-template-columns: repeat(auto-fit, 48vh);
+  justify-content: center;
+}
