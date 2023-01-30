@@ -23,6 +23,7 @@
 }
 
 .Card .text .card-header .title {
+  padding: 0;
   color: #333333;
   font-weight: 600;
   font-size: 18pt;
