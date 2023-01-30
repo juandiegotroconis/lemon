@@ -13,7 +13,6 @@
     box-sizing: border-box;
     transition: 0.6s;
     z-index: 1;
-    overflow-y: scroll;
   }
 
   .navbar .mobile-categories {
@@ -33,7 +32,7 @@
   }
 }
 
-@media only screen and (min-width: 510px) {
+@media only screen and (min-width: 511px) {
   .navbar .categories {
     margin-left: auto;
     display: flex;
