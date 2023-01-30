@@ -2,88 +2,49 @@
   margin: 0;
 }
 
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-.App .section-title {
+.section-title {
   font-size: 20pt;
   font-weight: 800;
   text-transform: uppercase;
   color: inherit;
 }
 
-.App .cta-text {
+.cta-text {
   font-size: 18pt;
   font-weight: 600;
   color: inherit;
 }
 
-.App .section-category {
+.section-category {
   font-size: 16pt;
   font-weight: 700;
   color: inherit;
 }
 
-.App .section-comment {
+.section-comment {
   font-size: 12pt;
   font-weight: 500;
   color: inherit;
 }
 
-.App .card-title {
+.card-title {
   font-size: 18pt;
   font-weight: 600;
   color: inherit;
 }
 
-.App .paragraph {
+.paragraph {
   font-size: 16pt;
   color: inherit;
 }
 
-.App .highlight-text {
+.highlight-text {
   font-size: 16pt;
   font-weight: 400;
   color: inherit;
 }
 
-.App .button {
+.button {
   height: fit-content;
   padding: 1vh 3vh;
   background-color: #f4ce14;
@@ -94,7 +55,7 @@
   border-radius: 1vh;
 }
 
-.App .button:hover {
+.button:hover {
   cursor: pointer;
   background-color: #f4cf14d3;
 }

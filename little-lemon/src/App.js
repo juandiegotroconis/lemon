@@ -1,25 +1,17 @@
 import "./App.css";
-import Footer from "./Pages/Footer";
-import Header from "./Pages/Header";
-import Main from "./Pages/Main";
-import Nav from "./Pages/Nav";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./Pages/Home";
+import Booking from "./Pages/Booking";
 
 function App() {
-  const sections = [
-    "home",
-    "about",
-    "menu",
-    "reservations",
-    "order online",
-    "login",
-  ];
   return (
-    <div className='App'>
-      <Nav sections={sections} />
-      <Header />
-      <Main />
-      <Footer sections={sections} />
-    </div>
+    <Router>
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/home' element={<Home />} />
+        <Route path='/booking' element={<Booking />} />
+      </Routes>
+    </Router>
   );
 }
 

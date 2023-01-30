@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Footer.css";
 
 function Footer(props) {
@@ -15,27 +16,27 @@ function Footer(props) {
       <ul className='categories'>
         {props.sections.map((sec) => {
           return (
-            <a href={`/${sec}`} key={sec}>
-              <li>{sec}</li>
-            </a>
+            <Link to={`/${sec.url}`} key={`footer-${sec.name}`}>
+              <li>{sec.name}</li>
+            </Link>
           );
         })}
       </ul>
       <ul className='categories'>
         {contacts.map((contact) => {
           return (
-            <a href={`/${contact}`} key={contact}>
+            <Link to={`/${contact}`} key={contact}>
               <li>{contact}</li>
-            </a>
+            </Link>
           );
         })}
       </ul>
       <ul className='categories'>
         {socialMedia.map((social) => {
           return (
-            <a href={`/${social}`} key={social}>
+            <Link to={`/${social}`} key={social}>
               <li>{social}</li>
-            </a>
+            </Link>
           );
         })}
       </ul>

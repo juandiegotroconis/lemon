@@ -1,10 +1,38 @@
 import React from "react";
+import Specials from "./Components/Specials";
+import Footer from "./Footer";
+import Header from "./Header";
+import Nav from "./Nav";
 import About from "./Components/About";
 import Customers from "./Components/Customers";
-import Specials from "./Components/Specials";
-import "./Main.css";
 
-function Main() {
+function Home() {
+  const sections = [
+    {
+      name: "home",
+      url: "home",
+    },
+    {
+      name: "about",
+      url: "about",
+    },
+    {
+      name: "menu",
+      url: "menu",
+    },
+    {
+      name: "reservations",
+      url: "reservations",
+    },
+    {
+      name: "order online",
+      url: "order-online",
+    },
+    {
+      name: "login",
+      url: "login",
+    },
+  ];
   const specials = [
     {
       img: require("../icons_assets/greek salad.jpg"),
@@ -47,12 +75,15 @@ function Main() {
   ];
 
   return (
-    <main className='main'>
+    <div className='Home'>
+      <Nav sections={sections} />
+      <Header />
       <Specials specials={specials} />
       <Customers reviews={customers} />
       <About />
-    </main>
+      <Footer sections={sections} />
+    </div>
   );
 }
 
-export default Main;
+export default Home;

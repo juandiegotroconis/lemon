@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "./Nav.css";
 
 function Nav(props) {
@@ -21,11 +22,11 @@ function Nav(props) {
       <ul className='categories'>
         {props.sections.map((sec) => {
           return (
-            <a href={`/${sec}`} key={sec}>
+            <Link key={`nav-${sec.name}`} to={`/${sec.url}`}>
               <li>
-                <p className='section-category'>{sec}</p>
+                <p className='section-category'>{sec.name}</p>
               </li>
-            </a>
+            </Link>
           );
         })}
       </ul>
@@ -34,11 +35,11 @@ function Nav(props) {
         <ul className='mobile-categories'>
           {props.sections.map((sec) => {
             return (
-              <a href={`/${sec}`} key={sec}>
+              <Link key={`mobile-nav${sec.name}`} to={`/${sec.url}`}>
                 <li>
-                  <p className='section-category'>{sec}</p>
+                  <p className='section-category'>{sec.name}</p>
                 </li>
-              </a>
+              </Link>
             );
           })}
         </ul>

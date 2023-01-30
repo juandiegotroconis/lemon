@@ -5,7 +5,9 @@ function TestimonialCard(props) {
   const rating = [];
 
   for (var i = 0; i < props.rating; i++) {
-    rating.push(<img src={require("../../icons_assets/star.png")} alt='' />);
+    rating.push(
+      <img key={i} src={require("../../icons_assets/star.png")} alt='' />
+    );
   }
   return (
     <div className='TestimonialCard'>
