@@ -22,7 +22,7 @@ function Home() {
     },
     {
       name: "reservations",
-      url: "reservations",
+      url: "booking",
     },
     {
       name: "order online",
