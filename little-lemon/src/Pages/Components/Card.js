@@ -12,7 +12,7 @@ function Card(props) {
         </div>
         <div className='description'>{props.description}</div>
         <div className='cta'>
-          <p>Order a delivery</p>
+          <p aria-label='Order delivery'>Order a delivery</p>
           <img
             className='icon'
             src={require("../../icons_assets/Delivery Scooter.png")}
