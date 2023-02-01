@@ -16,6 +16,33 @@ export const updateTimes = (state, action) =>
 function App() {
   const initialState = initializeTimes();
 
+  const sections = [
+    {
+      name: "home",
+      url: "home",
+    },
+    {
+      name: "about",
+      url: "about",
+    },
+    {
+      name: "menu",
+      url: "menu",
+    },
+    {
+      name: "reservations",
+      url: "booking",
+    },
+    {
+      name: "order online",
+      url: "order-online",
+    },
+    {
+      name: "login",
+      url: "login",
+    },
+  ];
+
   const [availableTimes, setAvailableTimes] = useReducer(
     updateTimes,
     initialState
@@ -28,8 +55,8 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/home' element={<Home />} />
+        <Route path='/' element={<Home sections={sections} />} />
+        <Route path='/home' element={<Home sections={sections} />} />
         <Route
           path='/booking'
           element={
@@ -37,6 +64,7 @@ function App() {
               availableTimes={availableTimes}
               dispatch={setAvailableTimes}
               submit={submitForm}
+              sections={sections}
             />
           }
         />

@@ -6,33 +6,7 @@ import Nav from "./Nav";
 import About from "./Components/About";
 import Customers from "./Components/Customers";
 
-function Home() {
-  const sections = [
-    {
-      name: "home",
-      url: "home",
-    },
-    {
-      name: "about",
-      url: "about",
-    },
-    {
-      name: "menu",
-      url: "menu",
-    },
-    {
-      name: "reservations",
-      url: "booking",
-    },
-    {
-      name: "order online",
-      url: "order-online",
-    },
-    {
-      name: "login",
-      url: "login",
-    },
-  ];
+function Home(props) {
   const specials = [
     {
       img: require("../icons_assets/greek salad.jpg"),
@@ -76,12 +50,12 @@ function Home() {
 
   return (
     <div className='Home'>
-      <Nav sections={sections} />
+      <Nav sections={props.sections} />
       <Header />
       <Specials specials={specials} />
       <Customers reviews={customers} />
       <About />
-      <Footer sections={sections} />
+      <Footer sections={props.sections} />
     </div>
   );
 }

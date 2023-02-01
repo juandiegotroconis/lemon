@@ -1,10 +1,14 @@
 import React from "react";
+import Nav from "./Nav";
 
 function BookingConfirmation() {
   return (
-    <div className='BookingConfirmation'>
-      Your reservation has been confirmed!
-    </div>
+    <>
+      <Nav />
+      <div className='BookingConfirmation'>
+        Your reservation has been confirmed!
+      </div>
+    </>
   );
 }
 

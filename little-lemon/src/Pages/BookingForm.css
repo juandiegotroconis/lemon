@@ -1,5 +1,44 @@
-.booking-form {
+.BookingForm {
+  background-color: #495e57;
+  padding: 2% 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.BookingForm .booking-form {
   display: grid;
-  max-width: 200px;
+  grid-template-columns: repeat(auto-fit, 15vh);
   gap: 20px;
+}
+
+.BookingForm .cta-text {
+  display: block;
+  color: #edefee;
+  margin: 2vh;
+}
+
+.BookingForm span {
+  display: block;
+  color: rgb(200, 200, 200);
+  margin-bottom: 2vh;
+}
+
+.BookingForm label {
+  display: block;
+  margin-top: 2vh;
+  color: #edefee;
+  margin-right: 1vh;
+}
+
+.BookingForm input,
+select {
+  width: 20vh;
+  margin-right: 2vh;
+}
+
+.BookingForm .button {
+  margin: 3vh 0vh;
+  display: block;
+  width: 100%;
 }
