@@ -6,6 +6,13 @@
   border-top-right-radius: 2vh;
   overflow: hidden;
   padding-bottom: 1.5vh;
+  transition: 600ms;
+  box-shadow: 3px 4px 3px 0.1px rgba(0, 0, 0, 0.25);
+}
+
+.Card:hover {
+  scale: 1.04;
+  transition: 600ms;
 }
 
 .Card .card-img {

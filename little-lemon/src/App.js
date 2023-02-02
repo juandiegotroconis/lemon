@@ -5,6 +5,8 @@ import BookingForm from "./Pages/BookingForm";
 import { useReducer } from "react";
 import { fetchAPI, submitAPI } from "./api/api";
 import BookingConfirmation from "./Pages/BookingConfirmation";
+import { AlertProvider } from "./context/alertContext";
+import Alert from "./Pages/Components/Alert";
 
 export const initializeTimes = () => {
   return { list: fetchAPI(new Date()) };
@@ -23,11 +25,11 @@ function App() {
     },
     {
       name: "about",
-      url: "about",
+      url: "#",
     },
     {
       name: "menu",
-      url: "menu",
+      url: "#",
     },
     {
       name: "reservations",
@@ -35,11 +37,11 @@ function App() {
     },
     {
       name: "order online",
-      url: "order-online",
+      url: "#",
     },
     {
       name: "login",
-      url: "login",
+      url: "#",
     },
   ];
 
@@ -48,29 +50,31 @@ function App() {
     initialState
   );
 
-  const submitForm = (data) => {
-    return submitAPI(data);
-  };
-
   return (
-    <Router>
-      <Routes>
-        <Route path='/' element={<Home sections={sections} />} />
-        <Route path='/home' element={<Home sections={sections} />} />
-        <Route
-          path='/booking'
-          element={
-            <BookingForm
-              availableTimes={availableTimes}
-              dispatch={setAvailableTimes}
-              submit={submitForm}
-              sections={sections}
-            />
-          }
-        />
-        <Route path='/booking-confirmation' element={<BookingConfirmation />} />
-      </Routes>
-    </Router>
+    <AlertProvider>
+      <Router>
+        <Alert />
+        <Routes>
+          <Route path='/' element={<Home sections={sections} />} />
+          <Route path='/home' element={<Home sections={sections} />} />
+          <Route
+            path='/booking'
+            element={
+              <BookingForm
+                availableTimes={availableTimes}
+                dispatch={setAvailableTimes}
+                submit={submitAPI}
+                sections={sections}
+              />
+            }
+          />
+          <Route
+            path='/booking-confirmation'
+            element={<BookingConfirmation sections={sections} />}
+          />
+        </Routes>
+      </Router>
+    </AlertProvider>
   );
 }
 

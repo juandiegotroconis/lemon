@@ -54,6 +54,7 @@
   align-items: center;
   justify-content: center;
   padding: 3vh;
+  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.1);
 }
 
 .navbar .navbar-img {
@@ -84,5 +85,5 @@
 }
 
 .navbar .categories li:hover {
-  text-decoration: underline;
+  color: #f4ce14;
 }

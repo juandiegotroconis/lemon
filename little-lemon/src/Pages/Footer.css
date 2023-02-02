@@ -11,7 +11,11 @@
 
 .footer .footer-img {
   margin: auto;
-  height: 6vh;
+  height: 15vh;
+}
+
+.footer .footer-img:hover {
+  cursor: pointer;
 }
 
 .footer .categories {

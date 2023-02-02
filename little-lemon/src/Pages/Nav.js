@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "./Nav.css";
 
 function Nav(props) {
+  const navigate = useNavigate();
   const [navbar, setNavbar] = useState(false);
   return (
     <nav className='navbar'>
@@ -10,6 +11,9 @@ function Nav(props) {
         src={require("../icons_assets/Logo.png")}
         alt='Little Lemon Logo'
         className='navbar-img'
+        onClick={() => {
+          navigate("/");
+        }}
       />
       <img
         src={require(`../icons_assets/${navbar ? "x" : "menu"}.png`)}

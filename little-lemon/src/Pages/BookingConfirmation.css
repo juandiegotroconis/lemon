@@ -1,0 +1,12 @@
+.BookingConfirmation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.BookingConfirmation h1 {
+  text-align: center;
+  padding-top: 5vh;
+  margin-bottom: 2vh;
+}

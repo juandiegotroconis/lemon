@@ -41,7 +41,7 @@
   justify-self: center;
   width: 50%;
   border-radius: 2vh;
-  box-shadow: 3px 4px 3px 0.1px rgba(0, 0, 0, 0.25);
+  box-shadow: 3px 4px 3px 1px rgba(0, 0, 0, 0.25);
 }
 
 .About img:first-child {

@@ -14,6 +14,7 @@
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  font-weight: 600;
 }
 
 .TestimonialCard p:first-child {
